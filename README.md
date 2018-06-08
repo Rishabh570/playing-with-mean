@@ -1,2 +1,3 @@
-# playing-with-mean
-Learning MEAN stack.
+# Getting MEAN done.
+
+Doing MEAN basic project to learn concepts.
