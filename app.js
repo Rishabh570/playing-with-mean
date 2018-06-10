@@ -24,7 +24,7 @@ const app = express();
 const users = require("./routes/users");
 
 // Port number
-const port = 3000;
+const port = process.env.PORT || 8080;
 
 //CORS middleware
 app.use(cors());
@@ -47,6 +47,9 @@ app.get("/", (req, res) => {
     res.send("Hello world!");
 });
 
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'public/index.html');)
+// });
 
 // Start server
 app.listen(port, () => {
